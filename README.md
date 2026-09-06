@@ -109,5 +109,22 @@ Parking-Management-Database-System/
 │   └── queries.sql
 │
 ├── documentation/
+│   └── Parking_Management_Documentation.docx
 │
 └── screenshots/
+    │
+    ├── 01_AREA_table.png
+    ├── 02_VEHICLE_table.png
+    ├── 03_SLOT_table.png
+    ├── 04_TRACKING_table.png
+    ├── 05_FEE_table.png
+    ├── 06_PARKING_UNNORMALIZED_table.png
+    │
+    ├── 07_total_vehicles_query.png
+    ├── 08_vehicles_by_type_query.png
+    ├── 09_slots_by_status_query.png
+    ├── 10_total_revenue_query.png
+    ├── 11_average_fee_query.png
+    ├── 12_fees_above_100_query.png
+    ├── 13_tracking_over_5_hours_query.png
+    └── 14_areas_capacity_over_50_query.png
