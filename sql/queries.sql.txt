@@ -1,0 +1,123 @@
+-- =========================================
+-- PARKING MANAGEMENT SYSTEM - QUERIES
+-- =========================================
+
+-- 1. Check project tables
+SELECT table_name
+FROM user_tables
+WHERE table_name IN ('AREA','VEHICLE','SLOT','TRACKING','FEE','PARKING_UNNORMALIZED')
+ORDER BY table_name;
+
+
+-- 2. Display parking unnormalized data
+SELECT * FROM PARKING_UNNORMALIZED;
+
+
+-- 3. Display area data
+SELECT * FROM AREA;
+
+
+-- 4. Display vehicle data
+SELECT * FROM VEHICLE;
+
+
+-- 5. Display slot data
+SELECT * FROM SLOT;
+
+
+-- 6. Display tracking data
+SELECT * FROM TRACKING;
+
+
+-- 7. Display fee data
+SELECT * FROM FEE;
+
+
+-- 8. Count tracking records for each vehicle
+SELECT VEHICLEID, COUNT(*)
+FROM TRACKING
+GROUP BY VEHICLEID;
+
+
+-- 9. Count total vehicles
+SELECT COUNT(*) AS TOTAL_VEHICLES
+FROM VEHICLE;
+
+
+-- 10. Count vehicles by type
+SELECT VTYPE, COUNT(*) AS TOTAL_VEHICLES
+FROM VEHICLE
+GROUP BY VTYPE
+ORDER BY TOTAL_VEHICLES DESC;
+
+
+-- 11. Count slots by status
+SELECT SLOTSTATUS, COUNT(*) AS TOTAL_SLOTS
+FROM SLOT
+GROUP BY SLOTSTATUS;
+
+
+-- 12. Calculate total parking revenue
+SELECT SUM(TOTALFEE) AS TOTAL_REVENUE
+FROM FEE;
+
+
+-- 13. Calculate average parking fee
+SELECT AVG(TOTALFEE) AS AVERAGE_FEE
+FROM FEE;
+
+
+-- 14. Find highest parking fee
+SELECT MAX(TOTALFEE) AS HIGHEST_FEE
+FROM FEE;
+
+
+-- 15. Find lowest parking fee
+SELECT MIN(TOTALFEE) AS LOWEST_FEE
+FROM FEE;
+
+
+-- 16. Show parking fees above 100
+SELECT *
+FROM FEE
+WHERE TOTALFEE > 100
+ORDER BY TOTALFEE DESC;
+
+
+-- 17. Show vehicles of a specific type
+SELECT *
+FROM VEHICLE
+WHERE VTYPE = 'Car';
+
+
+-- 18. Show available parking slots
+SELECT *
+FROM SLOT
+WHERE SLOTSTATUS = 'Available';
+
+
+-- 19. Show occupied parking slots
+SELECT *
+FROM SLOT
+WHERE SLOTSTATUS = 'Occupied';
+
+
+-- 20. Show tracking records with duration greater than 5 hours
+SELECT *
+FROM TRACKING
+WHERE DURATIONHRS > 5
+ORDER BY DURATIONHRS DESC;
+
+
+-- 21. Show areas with capacity greater than 50
+SELECT *
+FROM AREA
+WHERE CAPACITY > 50
+ORDER BY CAPACITY DESC;
+
+
+-- 22. Show fees by hourly rate
+SELECT HOURLYRATE, COUNT(*) AS NUMBER_OF_RECORDS
+FROM FEE
+GROUP BY HOURLYRATE
+ORDER BY HOURLYRATE;
