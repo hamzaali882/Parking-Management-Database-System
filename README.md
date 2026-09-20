@@ -174,37 +174,36 @@ The `queries.sql` file contains queries covering different levels of SQL analysi
 ```text
 Parking-Management-Database-System/
 │
-├── README.md
+├── documentation/
+│   └── Parking_Management_Documentation.docx
+│
+├── screenshots/
+│   ├── AREA TABLE.png
+│   ├── AREA_CAPACITY_GREATER50.png
+│   ├── AVERAGE_FEE.png
+│   ├── CTE_AREA_REVENUE.png
+│   ├── ER_Diagram.png
+│   ├── FEE TABLE.png
+│   ├── MULTI_TABLE_JOIN.png
+│   ├── PARKING_DURATION_CASE.png
+│   ├── PARKING_FEE_ABOVE_100.png
+│   ├── PARKING_REVENUE_QUERY.png
+│   ├── PARKING_UNNORMALIZED TABLE.png
+│   ├── REVENUE_BY_PARKING_AREA.png
+│   ├── RUNNING_REVENUE.png
+│   ├── SLOT TABLE.png
+│   ├── SLOT_STATUS_QUERY.png
+│   ├── TOTAL_VEHICLE_QUERY.png
+│   ├── TRACKING TABLE.png
+│   ├── TRACKING_DURATION_5HOURS.png
+│   ├── VEHICLE TABLE.png
+│   └── VEHICLE_TYPE_QUERY.png
 │
 ├── sql/
 │   ├── parking_management.sql
 │   └── queries.sql
 │
-├── documentation/
-│   └── Parking_Management_Documentation.docx
-│
-└── screenshots/
-    │
-    ├── AREA TABLE.png
-    ├── AREA_CAPACITY_GREATER50.png
-    ├── AVERAGE_FEE.png
-    ├── CTE_AREA_REVENUE.png
-    ├── ER_Diagram.png
-    ├── FEE TABLE.png
-    ├── MULTI_TABLE_JOIN.png
-    ├── PARKING_DURATION_CASE.png
-    ├── PARKING_FEE_ABOVE_100.png
-    ├── PARKING_REVENUE_QUERY.png
-    ├── PARKING_UNNORMALIZED TABLE.png
-    ├── REVENUE_BY_PARKING_AREA.png
-    ├── RUNNING_REVENUE.png
-    ├── SLOT TABLE.png
-    ├── SLOT_STATUS_QUERY.png
-    ├── TOTAL_VEHICLE_QUERY.png
-    ├── TRACKING TABLE.png
-    ├── TRACKING_DURATION_5HOURS.png
-    ├── VEHICLE TABLE.png
-    └── VEHICLE_TYPE_QUERY.png
+└── README.md
 ```
 
 ## Project Highlights
