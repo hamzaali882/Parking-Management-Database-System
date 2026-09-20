@@ -113,18 +113,23 @@ Parking-Management-Database-System/
 │
 └── screenshots/
     │
-    ├── 01_AREA_table.png
-    ├── 02_VEHICLE_table.png
-    ├── 03_SLOT_table.png
-    ├── 04_TRACKING_table.png
-    ├── 05_FEE_table.png
-    ├── 06_PARKING_UNNORMALIZED_table.png
-    │
-    ├── 07_total_vehicles_query.png
-    ├── 08_vehicles_by_type_query.png
-    ├── 09_slots_by_status_query.png
-    ├── 10_total_revenue_query.png
-    ├── 11_average_fee_query.png
-    ├── 12_fees_above_100_query.png
-    ├── 13_tracking_over_5_hours_query.png
-    └── 14_areas_capacity_over_50_query.png
+    ├── AREA TABLE.png
+    ├── AREA_CAPACITY_GREATER50.png
+    ├── AVERAGE_FEE.png
+    ├── CTE_AREA_REVENUE.png
+    ├── ER_Diagram.png
+    ├── FEE TABLE.png
+    ├── MULTI_TABLE_JOIN.png
+    ├── PARKING_DURATION_CASE.png
+    ├── PARKING_FEE_ABOVE_100.png
+    ├── PARKING_REVENUE_QUERY.png
+    ├── PARKING_UNNORMALIZED TABLE.png
+    ├── REVENUE_BY_PARKING_AREA.png
+    ├── RUNNING_REVENUE.png
+    ├── SLOT TABLE.png
+    ├── SLOT_STATUS_QUERY.png
+    ├── TOTAL_VEHICLE_QUERY.png
+    ├── TRACKING TABLE.png
+    ├── TRACKING_DURATION_5HOURS.png
+    ├── VEHICLE TABLE.png
+    └── VEHICLE_TYPE_QUERY.png
